@@ -1,0 +1,7 @@
+requests
+python-dotenv
+semantic-kernel
+uvicorn
+starlette
+pydantic
+mcp

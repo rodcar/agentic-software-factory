@@ -1,0 +1,9 @@
+python-dotenv
+# Core dependencies
+requests
+# For Azure DevOps API
+azure-devops
+# For testing
+pytest
+# For plugin loading
+importlib-metadata; python_version<'3.8'

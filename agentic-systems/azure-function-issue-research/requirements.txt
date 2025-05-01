@@ -1,0 +1,15 @@
+# DO NOT include azure-functions-worker in this file
+# The Python Worker is managed by Azure Functions platform
+# Manually managing azure-functions-worker may cause unexpected issues
+
+azure-functions
+openai
+autogen-agentchat
+autogen-ext
+tiktoken
+aiofiles
+playwright
+dotenv
+rich
+azure-ai-projects
+azure-identity
