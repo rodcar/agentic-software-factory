@@ -1,0 +1,126 @@
+a[href*='https://github.com/Chainlit/chainlit'] {
+    visibility: hidden;
+} 
+
+.watermark {
+    display: none !important;
+}
+
+.watermark a p, .watermark a svg{ display: none; }
+
+/* Additional selectors to hide the specific watermark */
+a[href="https://chainlit.io"] {
+    display: none !important;
+}
+
+a[href="https://chainlit.io"] svg,
+a[href="https://chainlit.io"] div,
+a[href="https://chainlit.io"] span {
+    display: none !important;
+}
+
+#readme-button {
+    display: none !important;
+}
+
+/* Peacock-inspired Theme */
+:root {
+    --peacock-blue: #005A8D;
+    --peacock-green: #00A67D;
+    --peacock-purple: #5B2A86;
+}
+
+/* Accent elements with peacock colors */
+.cl-button, 
+button[type="submit"],
+.cl-submit-button {
+    background: linear-gradient(135deg, var(--peacock-blue), var(--peacock-green)) !important;
+    border: none !important;
+    transition: all 0.3s ease !important;
+}
+
+.cl-button:hover, 
+button[type="submit"]:hover,
+.cl-submit-button:hover {
+    background: linear-gradient(135deg, var(--peacock-green), var(--peacock-purple)) !important;
+    transform: translateY(-2px) !important;
+    box-shadow: 0 4px 12px rgba(0, 166, 125, 0.3) !important;
+}
+
+/* Header styling */
+.cl-header {
+    background: linear-gradient(to right, var(--peacock-blue), var(--peacock-purple)) !important;
+    border-bottom: none !important;
+}
+
+/* Message container styling */
+.cl-message-container {
+    border-radius: 12px !important;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Chat input styling */
+.cl-chat-input-container {
+    background: linear-gradient(to right, rgba(0, 90, 141, 0.05), rgba(91, 42, 134, 0.05)) !important;
+    border-radius: 12px !important;
+    border: 1px solid rgba(0, 166, 125, 0.2) !important;
+}
+
+/* User message styling */
+.cl-message-user {
+    background: linear-gradient(135deg, var(--peacock-blue), var(--peacock-purple), var(--peacock-blue)) !important;
+    background-size: 200% 200% !important;
+    animation: peacockGradient 5s ease infinite !important;
+    color: white !important;
+}
+
+/* AI message styling */
+.cl-message-ai {
+    border-left: 4px solid var(--peacock-green) !important;
+    background-color: rgba(0, 166, 125, 0.05) !important;
+}
+
+/* Code blocks */
+pre, code {
+    border-radius: 8px !important;
+    border: 1px solid rgba(0, 166, 125, 0.3) !important;
+    background: linear-gradient(to right, rgba(0, 90, 141, 0.1), rgba(0, 166, 125, 0.1)) !important;
+}
+
+/* Sidebar links */
+.cl-sidebar a {
+    color: var(--peacock-blue) !important;
+    transition: color 0.3s ease !important;
+}
+
+.cl-sidebar a:hover {
+    color: var(--peacock-green) !important;
+}
+
+/* Animation for gradient */
+@keyframes peacockGradient {
+    0% {background-position: 0% 50%}
+    50% {background-position: 100% 50%}
+    100% {background-position: 0% 50%}
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(0, 166, 125, 0.05);
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(var(--peacock-blue), var(--peacock-green));
+    border-radius: 4px;
+}
+
+/* custom.css */
+
+html.dark img.aspect-square.h-full.w-full.bg-transparent {
+  filter: invert(1) !important;
+  background-color: transparent !important;
+}

@@ -1,0 +1,4 @@
+semantic-kernel
+chainlit
+python-dotenv
+openai
